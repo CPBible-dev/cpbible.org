@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 
-import Navbar from "@/components/navbar";
-import Footer from "@/components/footer";
+
 import Hero from "@/components/hero";
 import EveryScriptureBecomesPersonal from "@/components/every-scripture-becomes-personal";
 import PrayerWall from "@/components/PrayerWall";
@@ -21,7 +20,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      <Navbar />
+      
 
       <main>
         <Hero />
@@ -86,7 +85,7 @@ export default function Home() {
         <SupportTheMission />
       </main>
 
-      <Footer />
+      
     </>
   );
 }

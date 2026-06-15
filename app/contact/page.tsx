@@ -1,7 +1,10 @@
+import Link from "next/link";
+
 export default function ContactPage() {
   return (
     <main className="bg-[#FAF7F0] min-h-screen">
 
+      {/* HERO */}
       <section className="py-24">
         <div className="mx-auto max-w-4xl px-6 text-center">
 
@@ -15,17 +18,18 @@ export default function ContactPage() {
 
           <p className="mt-8 text-xl leading-relaxed text-gray-600">
             Whether you have a question, partnership opportunity,
-            speaking invitation, or support request,
+            speaking invitation, prayer request, or support request,
             we'd be delighted to connect with you.
           </p>
 
         </div>
       </section>
+
       {/* CONTACT OPTIONS */}
       <section className="pb-24">
         <div className="mx-auto max-w-7xl px-6">
 
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-5">
 
             <div className="rounded-3xl bg-white p-8 shadow-sm">
               <div className="text-4xl">📧</div>
@@ -67,10 +71,21 @@ export default function ContactPage() {
               </p>
             </div>
 
+            <div className="rounded-3xl bg-white p-8 shadow-sm">
+              <div className="text-4xl">🙏</div>
+              <h3 className="mt-4 text-xl font-bold">
+                Prayer Requests
+              </h3>
+              <p className="mt-3 text-gray-600">
+                Share your prayer needs and let us stand with you in faith.
+              </p>
+            </div>
+
           </div>
 
         </div>
       </section>
+
       {/* CONTACT DETAILS + FORM */}
       <section className="pb-24">
         <div className="mx-auto max-w-7xl px-6">
@@ -100,8 +115,16 @@ export default function ContactPage() {
                   <h3 className="font-semibold text-[#1F2937]">
                     Email
                   </h3>
-                  <p className="mt-2 text-gray-600">
+
+                  <a
+                    href="mailto:info@cpbible.org"
+                    className="mt-2 block text-[#4E5D30] hover:underline"
+                  >
                     info@cpbible.org
+                  </a>
+
+                  <p className="mt-2 text-sm text-gray-500">
+                    We typically respond within 1–3 business days.
                   </p>
                 </div>
 
@@ -111,7 +134,7 @@ export default function ContactPage() {
                   </h3>
                   <p className="mt-2 text-gray-600">
                     Interested in bringing CPBible to your church,
-                    Bible study group, or ministry?
+                    Bible study group, ministry, or organisation?
                   </p>
                 </div>
 
@@ -121,16 +144,17 @@ export default function ContactPage() {
                   </h3>
                   <p className="mt-2 text-gray-600">
                     Conferences, churches, podcasts,
-                    leadership events, and workshops.
+                    leadership events, workshops, and ministry gatherings.
                   </p>
                 </div>
 
                 <div>
                   <h3 className="font-semibold text-[#1F2937]">
-                    Response Time
+                    Prayer Requests
                   </h3>
                   <p className="mt-2 text-gray-600">
-                    We aim to respond within 1–3 business days.
+                    Need prayer? We'd be honoured to stand with you in faith
+                    and pray for your needs.
                   </p>
                 </div>
 
@@ -151,6 +175,7 @@ export default function ContactPage() {
                   <label className="mb-2 block font-medium">
                     Name
                   </label>
+
                   <input
                     type="text"
                     className="w-full rounded-xl border border-gray-300 p-4"
@@ -162,6 +187,7 @@ export default function ContactPage() {
                   <label className="mb-2 block font-medium">
                     Email
                   </label>
+
                   <input
                     type="email"
                     className="w-full rounded-xl border border-gray-300 p-4"
@@ -173,6 +199,7 @@ export default function ContactPage() {
                   <label className="mb-2 block font-medium">
                     Subject
                   </label>
+
                   <input
                     type="text"
                     className="w-full rounded-xl border border-gray-300 p-4"
@@ -184,6 +211,7 @@ export default function ContactPage() {
                   <label className="mb-2 block font-medium">
                     Message
                   </label>
+
                   <textarea
                     rows={6}
                     className="w-full rounded-xl border border-gray-300 p-4"
@@ -206,6 +234,37 @@ export default function ContactPage() {
 
         </div>
       </section>
+
+      {/* SUPPORT THE MISSION */}
+      <section className="bg-[#4E5D30] py-24 text-white">
+        <div className="mx-auto max-w-4xl px-6 text-center">
+
+          <span className="rounded-full bg-white/10 px-4 py-2 text-sm font-semibold">
+            Support The Mission
+          </span>
+
+          <h2 className="mt-8 text-4xl font-bold md:text-5xl">
+            Help Keep CPBible Free For Everyone
+          </h2>
+
+          <p className="mx-auto mt-6 max-w-2xl text-lg text-white/80">
+            Your generosity helps believers around the world read the Word,
+            receive revelation, declare the Word, and live the Word through
+            Scripture-based prayer.
+          </p>
+
+          <div className="mt-10">
+            <Link
+              href="/donate"
+              className="inline-block rounded-xl bg-white px-8 py-4 font-semibold text-[#4E5D30] transition hover:opacity-90"
+            >
+              Support The Mission
+            </Link>
+          </div>
+
+        </div>
+      </section>
+
     </main>
   );
 }

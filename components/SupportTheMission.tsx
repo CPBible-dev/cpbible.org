@@ -2,8 +2,8 @@ import Link from "next/link";
 
 export default function SupportTheMission() {
   return (
-    <section className="bg-[#FAF7F0] py-24">
-      <div className="mx-auto max-w-7xl px-6">
+<section className="bg-white py-24">
+        <div className="mx-auto max-w-7xl px-6">
 
         <div className="mx-auto max-w-4xl text-center">
 

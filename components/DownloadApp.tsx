@@ -2,9 +2,8 @@ import Image from "next/image";
 
 export default function DownloadApp() {
   return (
-    <section 
-    className="bg-white py-24">
-      <div className="mx-auto max-w-6xl px-6">
+    <section className="bg-[#FAF7F0] py-24">
+        <div className="mx-auto max-w-6xl px-6">
 
         <div className="rounded-3xl bg-[#4E5D30] px-8 py-16 text-center text-white md:px-16">
 

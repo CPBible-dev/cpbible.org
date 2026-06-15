@@ -6,14 +6,14 @@ import { useState } from "react";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
-
-  const links = [
-    { href: "/", label: "Home" },
-    { href: "/features", label: "Features" },
-    { href: "/translations", label: "Translations" },
-    { href: "/impact", label: "Impact" },
-    { href: "/donate", label: "Donate" },
-  ];
+const links = [
+  { href: "/", label: "Home" },
+  { href: "/about", label: "About" },
+  { href: "/features", label: "Features" },
+  { href: "/translations", label: "Translations" },
+  { href: "/impact", label: "Impact" },
+  { href: "/contact", label: "Contact" },
+];
 
   return (
     <header className="sticky top-0 z-50 border-b bg-white/95 backdrop-blur">
@@ -34,12 +34,23 @@ export default function Navbar() {
           ))}
         </nav>
 
-        <Link
-          href="/download"
-          className="hidden md:inline-flex rounded-xl bg-[#4E5D30] px-5 py-3 text-white font-semibold"
-        >
-          Download App
-        </Link>
+<div className="hidden md:flex items-center gap-3">
+
+  <Link
+    href="/download"
+    className="rounded-full border border-[#4E5D30] px-5 py-2.5 font-semibold text-[#4E5D30] transition hover:bg-[#4E5D30] hover:text-white"
+  >
+    Download App
+  </Link>
+
+  <Link
+    href="/donate"
+    className="rounded-full bg-[#4E5D30] px-5 py-2.5 font-semibold text-white transition hover:opacity-90"
+  >
+    Support CPBible
+  </Link>
+
+</div>
 
         <button
           className="md:hidden"

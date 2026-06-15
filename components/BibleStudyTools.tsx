@@ -45,8 +45,8 @@ export default function BibleStudyTools() {
   ];
 
   return (
-    <section className="bg-white py-24">
-      <div className="mx-auto max-w-7xl px-6">
+<section className="bg-[#F3F6EE] py-24">
+              <div className="mx-auto max-w-7xl px-6">
         <div className="text-center">
           <span className="rounded-full bg-[#FDF6E2] px-4 py-2 text-sm font-semibold text-[#4E5D30]">
             Bible Study Tools
